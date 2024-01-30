@@ -10,7 +10,8 @@
     "build:server": "tsc -p tsconfig.server.json",
     "watch:client": "tsc -w -p tsconfig.client.json",
     "warch:server": "tsc -w -p tsconfig.server.json",
-    "dev": "npm run codegen && run-p watch:*"
+    "dev": "npm run codegen && run-p watch:*",
+    "test": "echo 'skip test'"
   },
   "private": true
 }

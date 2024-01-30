@@ -4,7 +4,8 @@
   "devDependencies": {},
   "scripts": {
     "build": "tsc",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "test": "echo 'skip test'"
   },
   "private": true
 }
