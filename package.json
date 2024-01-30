@@ -8,7 +8,7 @@
     "packages/functions"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky || true",
     "lint": "run-s lint:eslint lint:prettier",
     "lint:eslint": "eslint --max-warnings=0 '**/*.{ts,vue}'",
     "lint:prettier": "prettier --check '**/*.{ts,vue}'",
