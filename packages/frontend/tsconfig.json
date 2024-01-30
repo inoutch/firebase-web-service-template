@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+}

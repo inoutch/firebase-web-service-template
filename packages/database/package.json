@@ -1,0 +1,10 @@
+{
+  "name": "@example/database",
+  "version": "0.1.0",
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "private": true
+}

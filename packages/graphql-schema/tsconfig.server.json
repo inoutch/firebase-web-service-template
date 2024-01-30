@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "outDir": "lib",
+    "strict": true,
+    "target": "esnext"
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": ["src/generated/client.ts"]
+}

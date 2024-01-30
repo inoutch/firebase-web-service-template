@@ -1,0 +1,32 @@
+name: Deploy to prod
+
+on:
+  workflow_dispatch:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: Set Node.js 20.11.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.11.0
+      - name: ci
+        run: npm ci
+      - name: Create .env
+        run: cp .env.production .env
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v12.4.0
+        with:
+          args: deploy --force
+        env:
+          DOTENV: production
+          GCP_SA_KEY: ${{ secrets.PROD__GCP_SA_KEY }}
+          PROJECT_PATH: ./
+          PROJECT_ID: ${{ secrets.PROD__PROJECT_ID }}

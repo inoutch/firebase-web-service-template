@@ -1,0 +1,16 @@
+{
+  "name": "@example/graphql-schema",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.ts",
+    "build": "npm run codegen && run-p build:*",
+    "build:client": "tsc -p tsconfig.client.json",
+    "build:server": "tsc -p tsconfig.server.json",
+    "watch:client": "tsc -w -p tsconfig.client.json",
+    "warch:server": "tsc -w -p tsconfig.server.json",
+    "dev": "npm run codegen && run-p watch:*"
+  },
+  "private": true
+}

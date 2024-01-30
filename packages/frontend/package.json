@@ -1,0 +1,13 @@
+{
+  "name": "@example/frontend",
+  "type": "module",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@example/graphql-schema": "0.1.0"
+  },
+  "scripts": {
+    "dev": "vite --port 3000 --open",
+    "build": "vite build --emptyOutDir"
+  },
+  "private": true
+}
